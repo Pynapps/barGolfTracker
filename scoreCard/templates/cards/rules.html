@@ -1,0 +1,64 @@
+{% extends 'cards/base.html' %} {% block content %}
+<div class="page-title container-sm text-center shadow rounded mx-auto">
+    <h1>Rules</h1>
+</div>
+
+<div style="display: grid;place-items: start center;">
+    <div class="main-card card text-center shadow py-5 px3" style="width: clamp(25em, 50%, 50em);">
+            <h2>How to Play</h2>
+            <br/>
+            <hr/>
+        <section class="card-inner content-info">
+            <h3>Overview</h3>
+            <p class='rule-overview'>
+                The goal of <b>Bar Golf</b> is to have the lowest score out of all the players. The way to do that is to <b>DRINK</b>!!!
+            </p>
+            <p>
+                Each type of <b>drink</b> (beer, mixed drink, shot, etc.) has a value associated with it. There are also <b>penalties</b> for certain actions, like 
+                throwing up or drinking water, that will hurt your score.
+            </p>
+            <p>
+                You will <b>record</b> the total of all of your drinks/penalties at a particular bar/hole in "<b>Your Card</b>".
+            </p>
+            <p>
+                Remember to <b>Save</b> your card after each bar/hole so you don't lose or forget your progress.
+            </p>
+            <p>
+                The <b>par</b> value is the desired score for that bar/hole. Don't feel like you need to hit this score, it's just a goal.
+            </p>
+            <p>
+                Lastly, have fun and be safe! This is all in good fun, so don't feel like you need to drink more than you can handle.
+            </p>
+        </section>
+        <hr/>
+        <section class="card-inner content-info">
+            <h3>Scoring</h3>
+            <p>
+                Each type of drink has a value associated with it. The values are as follows:
+            </p>
+            <p>
+                <b>Beer</b>: -1<br/>
+                <b>Wine</b>: -2<br/>
+                <b>Mixed Drinks</b>: -2<br/>
+                <b>Bomb Shots</b>: -3<br/>
+                <b>Shots</b>: -3<br/>
+            </p>
+            <br/>
+            <p>
+                There are also penalties for certain actions. The penalties are as follows:
+            </p>
+            <p>
+                <b>Drinking a Water</b>: +1<br/>
+                <b>Bathroom Break</b>: +2<br/>
+                <b>Throwing Up</b>: +5<br/>
+            </p>
+            <br/>
+            <p>
+                If you don't know the value of a drink, ask someone who can make that call or use your best judgement.
+            </p>
+            <p>
+                The <b>total</b> score for a bar/hole is the <b>sum</b> of all your drinks and penalties.
+            </p>
+    </div>
+</div>
+{% endblock %}

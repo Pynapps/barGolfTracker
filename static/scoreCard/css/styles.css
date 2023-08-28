@@ -1,0 +1,26 @@
+body {
+    /*background-color: #00c9b7;*/
+    background-color: #DADDE2;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.page-title {
+    background-color: white;
+    color: #204735;
+}
+
+.main-card {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+.card-inner {
+    border-radius: .5em;
+}
+
+.total-table th,
+.total-table td {
+    width: 50%;
+}
