@@ -8,7 +8,8 @@ from .forms import ScoreForm
 # Create your views here.
 def index(request):
     golfers = Golfer.objects.all()
-    return render(request, "cards/index.html", {"golfers": golfers})
+    par = BarPar.objects.all().first()
+    return render(request, "cards/index.html", {"golfers": golfers, 'par': par})
 
 
 def scorecards(request):
