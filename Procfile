@@ -1,1 +1,1 @@
-web: gunicorn barGolfTracker.wsgi
+web: gunicorn barGolfTracker_wsgi.py
