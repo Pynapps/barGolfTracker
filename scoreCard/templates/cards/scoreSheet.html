@@ -7,7 +7,7 @@
 <div style="display: grid; place-items: start center">
   <div
     class="main-card card text-center shadow py-5 px3"
-    style="width: clamp(25em, 80%, 100em)"
+    style="width: clamp(20em, 80%, 100em)"
   >
     <section class="content-info">
       <div class="container paddings-mini tbl-container">
@@ -17,7 +17,7 @@
           >
             <thead class="point-table-head">
               <tr>
-                <th class="colhead">Name</th>
+                <th class="colhead"><div class='cell-inner name-inner'>Name</div></th>
                 <th>Do Dodge</th>
                 <th>Elbow Room</th>
                 <th>Wigwam</th>
@@ -40,7 +40,9 @@
               {% for person in golfers %}
               <tr>
                 <td class="text-center colhead">
+                  <div class='cell-inner'>
                   {{ person.user.first_name|capfirst }} {{ person.user.last_name|capfirst }}
+                  </div>
                 </td>
                 <td>{{ person.do_dodge }}</td>
                 <td>{{ person.elbow_room }}</td>
@@ -69,12 +71,23 @@
 </div>
 <style>
   .colhead {
+    box-sizing: border-box;
     position: sticky;
     width: 12em;
-    left: 0;
+    left: -1px;
+    margin-left: -1px;
     background-color: #ffffff;
-    margin-top: -1px;
     border: 1px solid #dedede;
+    padding: 0 !important;
+  }
+  .cell-inner {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 10px 20px;
+    border: 1px solid #dedede;
+  }
+  .name-inner {
+    margin: 0 !important;
   }
   .content-info {
     background: #ffffff;
@@ -84,6 +97,10 @@
     background-repeat: no-repeat !important;
     position: relative;
     padding-bottom: 100px;
+  }
+  .tbl-fixed {
+    border-right: 1px solid #dedede;
+    border-left: 1px solid #dedede;
   }
 
   .tbl-container {

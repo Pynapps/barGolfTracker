@@ -24,3 +24,7 @@ body {
 .total-table td {
     width: 50%;
 }
+
+.navbar {
+    max-width: 100% !important;
+}

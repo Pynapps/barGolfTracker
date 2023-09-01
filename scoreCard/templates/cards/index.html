@@ -4,7 +4,7 @@
 </div>
 <br />
 <div style="display: grid;place-items: start center;">
-<div class="main-card card text-center shadow py-5 px3" style="width: clamp(25em, 50%, 50em);">
+<div class="main-card card text-center shadow py-5 px3" style="width: clamp(20em, 60%, 50em);">
     <section class="card-inner content-info">
       <div class="container paddings-mini">
          <div class="row">
@@ -12,8 +12,8 @@
                <table class="table-total table-striped table-responsive table-hover result-point">
                   <thead class="point-table-head">
     <tr>
-      <th><h3>Name</h3></th>
-      <th><h3>Score</h3><p>Par = {{ par.total }}</p></th>
+      <th><h3><b>Name</b></h3></th>
+      <th><h3><b>Score</b></h3><p>Par = {{ par.total }}</p></th>
     </tr>
   </thead>
   <tbody class="text-center">
@@ -84,11 +84,6 @@ table.result-point tr td .fa {
     right: 20px;
 }
 
-table tr td {
-    padding: 10px 40px;
-    border: 1px solid #dedede;
-}
-
 table tr td img {
     max-width: 32px;
     float: left;
@@ -96,6 +91,11 @@ table tr td img {
     margin-top: 1px;
     border: 1px solid #dedede;
 }
-
+@media (max-width: 500) {
+  .main-card {
+    width: 95% !important;
+    margin: auto 0 !important;
+  }
+}
 </style>
 {% endblock %}

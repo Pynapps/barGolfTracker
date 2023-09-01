@@ -42,19 +42,19 @@ class ScoreForm(ModelForm):
         }
 
         widgets = {
-            "do_dodge": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "elbow_room": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "wigwam": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "depot": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "sports_page": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "reboot": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "mouse_trap": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "clancys": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "dooleys": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "gi": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "brothers": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "pio": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "pickle": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "shenanns": forms.NumberInput(attrs={'class':'score-input rounded'}),
-            "brat": forms.NumberInput(attrs={'class':'score-input rounded'})
+            "do_dodge": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "elbow_room": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "wigwam": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "depot": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "sports_page": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "reboot": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "mouse_trap": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "clancys": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "dooleys": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "gi": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "brothers": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "pio": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "pickle": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "shenanns": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'}),
+            "brat": forms.NumberInput(attrs={'class':'score-input rounded', 'readonly': 'readonly'})
         }
